@@ -1,0 +1,219 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border box is added to not let the style
+     affect the real sizes */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-image: url("image-Photoroom.png"); */
+}
+body{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*big sidebar  */
+.wrapper{
+    /*position: absolute;*/
+    position: fixed;
+    top: 10%;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    background-color: #95775b45;
+    /* to see the padding on the top
+     and bottom to 4 and on the left and right to 8 */
+    padding: 4px 8px;
+    /* applies a transformation effect over a duration of 0.5 seconds. 
+     The ease keyword makes the change start slowly, then speed up,
+     and then slow down again towards the end.*/
+    transition: all 0.3s ease;
+    border-top-left-radius:34% ;
+    border-bottom-left-radius:40% ; 
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+     
+}
+
+/*~ --> means that these classes are siblings 
+ apply edits on the shared elements*/
+.wrapper.active ~ .content{
+    right: 250px;
+    width: calc(100%-250px);
+}
+
+.wrapper.active{
+    width: 250px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.wrapper #btn{
+    position: absolute;
+    color: rgb(222, 73, 222);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 30%;
+    cursor: pointer;
+}
+
+.wrapper.active #btn{
+    left: 80%;
+    bottom: 92.5%;
+}
+
+
+.wrapper .sidebar-header .logo #sub-header{
+    color: white;
+    height: 50px;
+    width: 100%;
+    /*creates a flex container for it's childern, to set 
+    properities like justify-content, align-items, 
+    and flex-direction*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.wrapper.active .sidebar-header .logo #sub-header{
+    opacity: 1;
+}
+
+
+.wrapper .sidebar {
+    position: relative;
+    /*to remove the dots in the list*/
+    list-style-type: none;
+    /*height: 25px;*/
+    /* the width of the text inside*/
+    width: 90%;
+    margin: 10px auto;
+    line-height: 17px;
+
+    /*to make gaps between icons*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+a {
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a:hover{
+    background-color:#8E3200;
+    color: white;
+}
+
+
+i{
+    min-width: 50px;
+    /*to adjust the size of the icon*/
+    font-size: 20px;
+    position: relative;
+    padding-right: 35%;
+    padding-bottom: 10%;
+    
+}
+
+
+.wrapper.active i{
+    min-width: 50px;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    line-height: 50px;
+    
+}
+
+.wrapper.active a{
+    padding-right: 0%;
+    padding-bottom: 0%;
+    line-height: 50px;
+}
+
+.sidebar .nav-item{
+    opacity: 0;
+}
+
+.wrapper.active .sidebar .nav-item{
+    opacity: 1;
+}
+
+
+
+.header{
+    margin-top: 2%;
+    background-color: #dac1ab61;
+    color: #fff;
+    height: 80px;
+    /* margin-right: 100px; */
+    width: 61%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 47%;
+    position: absolute;
+    right: 24%;
+    /* 
+    border-top-left-radius:40% ;
+    border-bottom-left-radius:40% ; */
+    box-shadow: 7px 5px 10px #ffffff9e;
+    
+}
+
+.header h3{
+    margin-left: auto;
+    padding-right: 100px;
+    /* font-family: Arabic Typesetting; */
+    font-size: x-large;
+  color: #7e2e03e3;
+}
+/* 
+.wrapper.active ~ .header h3{
+    padding-right: 160px;
+} */
+
+
+
+#icon1{
+   color: #C5FF95;
+}
+
+#icon2, #icon3{
+    color: #41B06E;
+}
+
+
+#icon4, #icon5{
+    color: #A3D8FF;
+}
+
+
+#icon6, #icon7{
+    color: #DC6B19;
+}
+
+#icon8{
+    color: red;
+}
+
+#icon9{
+    color: #3330E4;
+}
+
+.bottom_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

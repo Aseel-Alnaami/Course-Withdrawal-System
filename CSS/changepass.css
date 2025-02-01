@@ -1,0 +1,75 @@
+body{
+    background-color: #FBF8DD;
+    font-family: 'Arabic Typesetting',serif;
+}
+
+
+table {
+    
+    width:fit-content;
+    /*margin: 50px auto;9*/
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Arabic Typesetting;
+    font-size: larger;
+    font-style: bold;
+    border-collapse: collapse;/*لحتى نشيل كل الاعمده يلي بالجدول */
+    
+}
+th, td {
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+   
+}
+td{
+    font-size: larger;
+    
+
+}
+th {
+    background-color: #A95700;
+    font-size:x-large;
+     text-align: center; 
+     color: #FFF;
+    
+}
+input[type="password"] {
+    padding: 8px 20px;
+    background-color: #e9e9e9d3;
+    color: rgb(0, 0, 0);
+    border: 2px solid #A95700;
+    border-radius: 4px;
+}
+
+input[type="password"]:hover {
+    background-color: #fafafa;
+
+}
+input[type="password"]:focus {
+border-color: #18a00c; /* Change border color on focus */
+box-shadow: 0 0 10px rgba(4, 124, 32, 0.532); /* Add shadow on focus */
+}
+
+#change_bttn{
+    width: 70px;
+    height:fit-content;
+    background-color: #501717f5;
+    color: #FFF; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 25px; 
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+#change_bttn:hover {
+      background-color: #672b11; /* Darker background color on hover */
+      color: #FFF;
+      height: 35px;
+      width: 75px;
+
+}

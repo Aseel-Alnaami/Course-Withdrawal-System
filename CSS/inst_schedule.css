@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-style: bold;
+
+    background-color:#FBF8DD;
+    color:#A95700;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 90%;
+    max-width: 900px;
+    height: 300px;
+    padding: 0%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size:20px;
+}
+
+
+thead {
+    background-color: #A95700;
+    color: #fff;
+}
+
+.inst_sched {
+    width: 100%;
+    height: 100%;
+    margin:0%;
+    font-style: bold;
+    border-radius: 10px;
+    overflow: hidden;/* any content that exceeds the bounds of its container is not visible;
+     it is "clipped" and hidden from view. */
+   
+}
+
+
+
+.inst_sched {
+    border-collapse: separate; /* This makes borders between cells appear separatel*/
+    border-spacing: 0px 0px; /* Adjust this value to increase or decrease the gap between rows*/ 
+}
+.inst_sched tbody tr:nth-child(even) {
+    background-color: #e6d2d2; /* Change this to the desired background color */
+}
+
+
+.inst_sched th,
+.inst_sched td {
+    padding: 8px;
+    text-align: center;
+}
+
+.inst_sched th {
+    color: white;
+    background-color: #A95700;
+    /*padding: 20px;*/
+}

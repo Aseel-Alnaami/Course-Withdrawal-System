@@ -1,0 +1,109 @@
+/* 
+body {
+    display:flex;
+    font-family: 'Arial', sans-serif;
+    font-style: bold;
+    z-index: 30000;
+    background-color:#FBF8DD;
+    color:#7e2e03e3;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    /* display: flex; */
+    align-items: center;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 330px;
+    height: 440px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff73;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7e2e03e3;
+    font-size:30px;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #702b06e3;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-style: bold;
+    border-radius: 10px;
+    overflow: hidden;/* any content that exceeds the bounds of its container is not visible;
+     it is "clipped" and hidden from view. */
+
+}
+
+thead {
+    background-color: #A95700;
+    color: #fff;
+    padding:  1px 0px 0px 0px;
+ 
+}
+thead i{
+    padding: 1px;
+    font-size: 55px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+td{
+
+    font-size: 20px;
+   font-family: Arabic Typesetting;
+}
+/* th {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+} */
+
+tr:nth-child(even) {
+    background-color: #d9cbbccf;
+/* }:nth-child(even): This pseudo-class selects every even <tr> element. 
+The counting starts from 1, so "even" refers to the 2nd, 4th, 6th, etc., elements. */
+}
+tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container{  position: absolute;
+    top: 45%;
+    left: 50%; 
+    
+    align-items: center;
+    transform: translate(-50%, -50%);
+    height: 400px;
+   }
+   .wrapper ul li a {
+    width:155px ;
+   }
+}  
